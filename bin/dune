@@ -1,0 +1,4 @@
+(executable
+ (public_name ocamltest)
+ (name main)
+ (libraries ocamltest))

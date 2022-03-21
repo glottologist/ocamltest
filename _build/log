@@ -1,0 +1,394 @@
+# dune build -p ocamltest
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: /home/jason/development/marigold/testocaml
+# Auto-detected concurrency: 12
+$ /nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlc.opt -config > /tmp/dune_49fde5_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Release
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path = None
+#  ; ocaml_bin =
+#      External
+#        "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin"
+#  ; ocaml =
+#      Ok
+#        External
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocaml"
+#  ; ocamlc =
+#      External
+#        "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok
+#        External
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok
+#        External
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok
+#        External
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" :
+#            "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" : "/home/jason/development/marigold/testocaml"
+#        ; "INSIDE_DUNE" :
+#            "/home/jason/development/marigold/testocaml/_build/default"
+#        ; "MANPATH" :
+#            "/home/jason/development/marigold/testocaml/_build/install/default/bin"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/home/jason/development/marigold/testocaml/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/home/jason/development/marigold/testocaml/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_path =
+#      [ External
+#          "/nix/store/kbb75hqphxj91bbm2r7g79ljy185s058-dune-3.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/h0jpl7ms0lxxwrmvlphaa735rvr5yw51-ocaml-findlib-1.9.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9nklbx3n7w7sq351lckvlljmv1rzv570-ocaml4.12.0-ocaml-lsp-server-1.9.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/2f0wr395agdqm7f7vdb9my0wqpsbfdpj-ocaml4.12.0-ocamlformat-0.20.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/abn8lv5a7jlhgxc0znd61yjg7q49sd4w-ocaml4.12.0-odoc-2.1.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/yva69999c1zj7f3gicpndqyg2rx5mvhj-ocaml4.12.0-odoc-parser-1.0.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/94fpa731mp2q4px3ajnp3sw9wg00jxqk-ocaml4.12.0-camlp-streams-5.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/x9lzn9fsk8cainybagj6m3g3f067qzcy-ocaml4.12.0-astring-0.8.5/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/97j057z4bwz0ldmg841a802idchq2khi-ocaml4.12.0-cmdliner-1.0.4/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/wqcbkg28ky732na7yajbz3icz0smrk6n-ocaml4.12.0-result-1.5/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/b66zlby17arv35w6wldjxh5nkki2v0sj-ocaml4.12.0-cppo-1.6.8/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/88f2dzhj4qil7wfs75sv4n3ibsq22pzg-ocaml4.12.0-fpath-0.7.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/v7bcx8wgfpc6ha3xny2bkha90kjgifgr-ocaml4.12.0-tyxml-4.5.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/biw7yby274kjk9qxc1k8453397mdfhdy-ocaml4.12.0-uutf-1.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/39cg7lgrfmcz5lh6jnag0qsv0268li6d-ocaml4.12.0-uchar-0.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/4d6gq0nrngc4fp9jk74hqv0v2071c4vg-ocaml4.12.0-re-1.9.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/8r9g0960720mcliwn3hy2jjz1irsazb3-ocaml4.12.0-seq-0.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/ap37048fg2z7fl3xd6z814j457ikl69f-ocaml4.12.0-fmt-0.8.9/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/d4ins077bzyc0vl27wa5l6vmvrv0bxx1-ocaml4.12.0-stdlib-shims-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/fapxcnynhx8jr83fkazcdvp000c39yfj-ocaml4.12.0-piaf-0.0.1-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9sg9y91a7q5pmy9aw4dm7g992gd73c71-ocaml4.12.0-logs-0.7.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/d72v68c7wyd0g5l889g863lpacl7vim8-ocaml4.12.0-lwt_ssl-1.1.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9njy2xpxm3hrcjj13gb39zmfnh70v7i0-ocaml4.12.0-ssl-0.5.10/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/skmlb7lhcl3ba6ry36jg881bxcym6d84-ocaml4.12.0-lwt-5.4.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/661vxamrn7ik705jjr3w7275ya8y207d-ocaml4.12.0-mmap-1.1.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/5b0b0sxfsx16cmwkidvf5vhakxg7sdbi-ocaml4.12.0-ocplib-endian-1.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/d04gnkw9icxisikyjmn8vvfxc9l5gry6-ocaml4.12.0-bigarray-compat-1.0.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/6kpg5q9g3gs3mxwl4609cb829fc1jk72-ocaml4.12.0-uri-4.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/q83n7yq3jsdyck9bnpkc7mjfjjypj3py-ocaml4.12.0-angstrom-0.15.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/yd1dq8nr69sp0krayv59rzxb765kc7rw-ocaml4.12.0-bigstringaf-0.7.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/klkmg8qr2rh2mvwnd2cs8n2b3iv9pjas-ocaml4.12.0-stringext-1.6.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/msdv36w9njam86qv14d4wvll14fl9k40-ocaml4.12.0-ipaddr-5.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/5cigqn9pvp9s5dn91kmn328r5iqg6qhx-ocaml4.12.0-macaddr-5.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/yx69ijvp4502b107998wyqinjscf4cyh-ocaml4.12.0-domain-name-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/09vhg5lnakzgmlmfls3bn4yzwcnr9c70-ocaml4.12.0-magic-mime-1.1.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/b9dqjcfph8dxa045ra6vcp7g9fps6l7c-ocaml4.12.0-multipart_form-0.1.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/34bdyx7skhv8033fpb6n9vl422iznsf7-ocaml4.12.0-base64-3.5.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9hj55j6svfdp9cw5kfc5jrgfj92wf9gr-ocaml4.12.0-pecu-0.6/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/3rwdr6ysfxyq1jggm7vdigjckzah3jvp-ocaml4.12.0-rosetta-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/1vh13a6m9w2xav8nlqbgx90v29p8ggj4-ocaml4.12.0-coin-0.1.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/hbvbrlhr6ajddy7in8b7j0gaql7xlg0v-ocaml4.12.0-uuuu-0.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/j5yarwr05nvxc98ajnfmd1ckw2kwijzn-ocaml4.12.0-yuscii-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/wx71h2ra10nlagny699xz87fiq6yssld-ocaml4.12.0-rresult-0.6.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/rs0gbv1bf7yxa5qwffh53n5w5xs8l7ws-ocaml4.12.0-faraday-0.7.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/26bgjcpbhfz25al378x27zi39w7gja69-ocaml4.12.0-ke-0.4/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/rir8560y23425qjnrvqhylv5n5v56zbn-ocaml4.12.0-prettym-0.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/404c0m2xia8bwa1in4k1r783rqa76dbj-ocaml4.12.0-bigarray-overlap-0.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/vjwqy0rg5vg2ybw5faj269yhdr1az3wq-ocaml4.12.0-unstrctrd-0.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/6kvbcbz36x4g1s9wqj9awawjdslwdq5y-ocaml4.12.0-httpaf-lwt-unix-0.7.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/j5bwl3k3knm9sf5bww7synhrsny0cpaj-ocaml4.12.0-httpaf-0.7.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/7xcjp04xri74f255gv73wghh34l7fqrh-ocaml4.12.0-httpaf-lwt-0.7.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/i40wxijxncvbcrwxksx1k5v86f22j2yp-ocaml4.12.0-gluten-lwt-0.2.2-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/7jrd3hkv8z9zkl67c0ycp9zanmw1hh2a-ocaml4.12.0-gluten-0.2.2-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/64f7gh3mfqiw0ibhmmaiya0gs22rv66q-ocaml4.12.0-gluten-lwt-unix-0.2.2-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/am62v1bm5j7wdv26zgbbjxpvvzhx0d7l-ocaml4.12.0-faraday-lwt-unix-0.7.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9gr5vrz5kxjl0myh14wgmizgafgv443z-ocaml4.12.0-faraday-lwt-0.7.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/6b0z7mpasb0f1m0bvvandc5df4sdjncq-ocaml4.12.0-h2-lwt-unix-0.8.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/bm1f4pjl18fpq38y8mppl8rw0i3wbhsg-ocaml4.12.0-h2-lwt-0.8.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/pvm1y9dviljfv074446xmz37718ypkz8-ocaml4.12.0-h2-0.8.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/2m3vinj6npmkn8bsi1cf7zgbqw1w5i6y-ocaml4.12.0-psq-0.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/xkrsh1qsfsc83maxaj4lq52835qsmd5d-ocaml4.12.0-hpack-0.8.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/pvzvxn0c0gzwkl3agp0a9x7hm0acgykj-ocaml4.12.0-yojson-1.7.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/ykf17vmmfm22mv5vy4p257ahvxjplmdp-ocaml4.12.0-easy-format-1.3.2+500/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/i7qzn7w5kl3qvzgzrj3cxvkni5kzif8v-ocaml4.12.0-biniou-1.2.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/kbb75hqphxj91bbm2r7g79ljy185s058-dune-3.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/h0jpl7ms0lxxwrmvlphaa735rvr5yw51-ocaml-findlib-1.9.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9nklbx3n7w7sq351lckvlljmv1rzv570-ocaml4.12.0-ocaml-lsp-server-1.9.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/2f0wr395agdqm7f7vdb9my0wqpsbfdpj-ocaml4.12.0-ocamlformat-0.20.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/abn8lv5a7jlhgxc0znd61yjg7q49sd4w-ocaml4.12.0-odoc-2.1.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/yva69999c1zj7f3gicpndqyg2rx5mvhj-ocaml4.12.0-odoc-parser-1.0.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/94fpa731mp2q4px3ajnp3sw9wg00jxqk-ocaml4.12.0-camlp-streams-5.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/x9lzn9fsk8cainybagj6m3g3f067qzcy-ocaml4.12.0-astring-0.8.5/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/97j057z4bwz0ldmg841a802idchq2khi-ocaml4.12.0-cmdliner-1.0.4/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/wqcbkg28ky732na7yajbz3icz0smrk6n-ocaml4.12.0-result-1.5/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/b66zlby17arv35w6wldjxh5nkki2v0sj-ocaml4.12.0-cppo-1.6.8/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/88f2dzhj4qil7wfs75sv4n3ibsq22pzg-ocaml4.12.0-fpath-0.7.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/v7bcx8wgfpc6ha3xny2bkha90kjgifgr-ocaml4.12.0-tyxml-4.5.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/biw7yby274kjk9qxc1k8453397mdfhdy-ocaml4.12.0-uutf-1.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/39cg7lgrfmcz5lh6jnag0qsv0268li6d-ocaml4.12.0-uchar-0.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/4d6gq0nrngc4fp9jk74hqv0v2071c4vg-ocaml4.12.0-re-1.9.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/8r9g0960720mcliwn3hy2jjz1irsazb3-ocaml4.12.0-seq-0.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/ap37048fg2z7fl3xd6z814j457ikl69f-ocaml4.12.0-fmt-0.8.9/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/d4ins077bzyc0vl27wa5l6vmvrv0bxx1-ocaml4.12.0-stdlib-shims-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/fapxcnynhx8jr83fkazcdvp000c39yfj-ocaml4.12.0-piaf-0.0.1-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9sg9y91a7q5pmy9aw4dm7g992gd73c71-ocaml4.12.0-logs-0.7.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/d72v68c7wyd0g5l889g863lpacl7vim8-ocaml4.12.0-lwt_ssl-1.1.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9njy2xpxm3hrcjj13gb39zmfnh70v7i0-ocaml4.12.0-ssl-0.5.10/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/skmlb7lhcl3ba6ry36jg881bxcym6d84-ocaml4.12.0-lwt-5.4.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/661vxamrn7ik705jjr3w7275ya8y207d-ocaml4.12.0-mmap-1.1.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/5b0b0sxfsx16cmwkidvf5vhakxg7sdbi-ocaml4.12.0-ocplib-endian-1.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/d04gnkw9icxisikyjmn8vvfxc9l5gry6-ocaml4.12.0-bigarray-compat-1.0.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/6kpg5q9g3gs3mxwl4609cb829fc1jk72-ocaml4.12.0-uri-4.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/q83n7yq3jsdyck9bnpkc7mjfjjypj3py-ocaml4.12.0-angstrom-0.15.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/yd1dq8nr69sp0krayv59rzxb765kc7rw-ocaml4.12.0-bigstringaf-0.7.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/klkmg8qr2rh2mvwnd2cs8n2b3iv9pjas-ocaml4.12.0-stringext-1.6.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/msdv36w9njam86qv14d4wvll14fl9k40-ocaml4.12.0-ipaddr-5.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/5cigqn9pvp9s5dn91kmn328r5iqg6qhx-ocaml4.12.0-macaddr-5.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/yx69ijvp4502b107998wyqinjscf4cyh-ocaml4.12.0-domain-name-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/09vhg5lnakzgmlmfls3bn4yzwcnr9c70-ocaml4.12.0-magic-mime-1.1.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/b9dqjcfph8dxa045ra6vcp7g9fps6l7c-ocaml4.12.0-multipart_form-0.1.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/34bdyx7skhv8033fpb6n9vl422iznsf7-ocaml4.12.0-base64-3.5.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9hj55j6svfdp9cw5kfc5jrgfj92wf9gr-ocaml4.12.0-pecu-0.6/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/3rwdr6ysfxyq1jggm7vdigjckzah3jvp-ocaml4.12.0-rosetta-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/1vh13a6m9w2xav8nlqbgx90v29p8ggj4-ocaml4.12.0-coin-0.1.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/hbvbrlhr6ajddy7in8b7j0gaql7xlg0v-ocaml4.12.0-uuuu-0.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/j5yarwr05nvxc98ajnfmd1ckw2kwijzn-ocaml4.12.0-yuscii-0.3.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/wx71h2ra10nlagny699xz87fiq6yssld-ocaml4.12.0-rresult-0.6.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/rs0gbv1bf7yxa5qwffh53n5w5xs8l7ws-ocaml4.12.0-faraday-0.7.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/26bgjcpbhfz25al378x27zi39w7gja69-ocaml4.12.0-ke-0.4/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/rir8560y23425qjnrvqhylv5n5v56zbn-ocaml4.12.0-prettym-0.0.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/404c0m2xia8bwa1in4k1r783rqa76dbj-ocaml4.12.0-bigarray-overlap-0.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/vjwqy0rg5vg2ybw5faj269yhdr1az3wq-ocaml4.12.0-unstrctrd-0.3/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/6kvbcbz36x4g1s9wqj9awawjdslwdq5y-ocaml4.12.0-httpaf-lwt-unix-0.7.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/j5bwl3k3knm9sf5bww7synhrsny0cpaj-ocaml4.12.0-httpaf-0.7.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/7xcjp04xri74f255gv73wghh34l7fqrh-ocaml4.12.0-httpaf-lwt-0.7.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/i40wxijxncvbcrwxksx1k5v86f22j2yp-ocaml4.12.0-gluten-lwt-0.2.2-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/7jrd3hkv8z9zkl67c0ycp9zanmw1hh2a-ocaml4.12.0-gluten-0.2.2-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/64f7gh3mfqiw0ibhmmaiya0gs22rv66q-ocaml4.12.0-gluten-lwt-unix-0.2.2-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/am62v1bm5j7wdv26zgbbjxpvvzhx0d7l-ocaml4.12.0-faraday-lwt-unix-0.7.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/9gr5vrz5kxjl0myh14wgmizgafgv443z-ocaml4.12.0-faraday-lwt-0.7.2/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/6b0z7mpasb0f1m0bvvandc5df4sdjncq-ocaml4.12.0-h2-lwt-unix-0.8.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/bm1f4pjl18fpq38y8mppl8rw0i3wbhsg-ocaml4.12.0-h2-lwt-0.8.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/pvm1y9dviljfv074446xmz37718ypkz8-ocaml4.12.0-h2-0.8.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/2m3vinj6npmkn8bsi1cf7zgbqw1w5i6y-ocaml4.12.0-psq-0.2.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/xkrsh1qsfsc83maxaj4lq52835qsmd5d-ocaml4.12.0-hpack-0.8.0-dev/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/pvzvxn0c0gzwkl3agp0a9x7hm0acgykj-ocaml4.12.0-yojson-1.7.0/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/ykf17vmmfm22mv5vy4p257ahvxjplmdp-ocaml4.12.0-easy-format-1.3.2+500/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/i7qzn7w5kl3qvzgzrj3cxvkni5kzif8v-ocaml4.12.0-biniou-1.2.1/lib/ocaml/4.12.0/site-lib/"
+#      ; External
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/lib"
+#      ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.12.0"
+#      ; standard_library_default =
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/lib/ocaml"
+#      ; standard_library =
+#          "/nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "gcc"
+#      ; ocamlc_cflags = [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-fPIC" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64"; "-D_REENTRANT" ]
+#      ; bytecomp_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-ldl"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "gcc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-fPIC"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ; "-D_REENTRANT"
+#          ]
+#      ; native_c_libraries = [ "-lm"; "-ldl" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "amd64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "linux"
+#      ; asm = [ "as" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "x86_64-unknown-linux-gnu"
+#      ; target = "x86_64-unknown-linux-gnu"
+#      ; profiling = false
+#      ; flambda = true
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X029"
+#      ; cmi_magic_number = "Caml1999I029"
+#      ; cmo_magic_number = "Caml1999O029"
+#      ; cma_magic_number = "Caml1999A029"
+#      ; cmx_magic_number = "Caml1999y029"
+#      ; cmxa_magic_number = "Caml1999z029"
+#      ; ast_impl_magic_number = "Caml1999M029"
+#      ; ast_intf_magic_number = "Caml1999N029"
+#      ; cmxs_magic_number = "Caml1999D029"
+#      ; cmt_magic_number = "Caml1999T029"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlc.opt -w -40 -g -bin-annot -I bin/.main.eobjs/byte -no-alias-deps -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlopt.opt -w -40 -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -intf-suffix .ml -no-alias-deps -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /nix/store/lqa6frin1l9h8naqzyr3lg7ilh40xhh5-ocaml+flambda-4.12.0/bin/ocamlopt.opt -w -40 -g -o bin/main.exe bin/.main.eobjs/native/dune__exe__Main.cmx)
